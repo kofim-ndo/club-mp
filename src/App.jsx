@@ -96,7 +96,7 @@ export default function ClubMPHomepage() {
 />
 
 <img
-  src="public/figure 2.png"
+  src="/figure 2.png"
 className="absolute right-2 md:right-12 top-[220px] md:top-52 w-20 md:w-36 rotate-[6deg] opacity-90"
 />
 
@@ -353,7 +353,7 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
 </div>
 <div className="w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
   <img
-    src="public/MMP/btrack1.png"
+    src="/MMP/btrack1.png"
     alt="Club MP Tracksuit"
     className="aspect-[3/4] rounded-lg object-contain w-full border border-neutral-200 bg-white p-4"
   />
@@ -809,7 +809,7 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
   <div className="flex gap-4 overflow-x-auto pb-4">
     <div className="w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
   <img
-    src="public/MMP/IMG_1826.JPEG"
+    src="/MMP/IMG_1826.JPEG"
     alt="Club MP Accessory"
     className="aspect-[3/4] rounded-lg object-contain w-full border border-neutral-200 bg-white p-4"
   />
@@ -830,7 +830,7 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
 </div>
     <div className="w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
   <img
-    src="public/MMP/beanie.jpeg"
+    src="/MMP/beanie.jpeg"
     alt="Club MP Accessory"
     className="aspect-[3/4] rounded-lg object-contain w-full border border-neutral-200 bg-white p-4"
   />
