@@ -50,7 +50,7 @@ export default function ProductPage() {
         <img
           src={product.image}
           alt={product.name}
-          className="w-full max-h-[45vh] md:max-h-none rounded-lg border border-neutral-200 object-contain md:object-cover"
+          className="w-full h-[320px] md:h-[520px] rounded-lg border border-neutral-200 object-contain bg-white"
         />
 
         <div>
