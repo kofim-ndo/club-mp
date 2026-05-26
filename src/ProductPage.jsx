@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 
 const products = {
@@ -35,6 +35,9 @@ const products = {
 export default function ProductPage() {
   const { id } = useParams();
   const product = products[id];
+  useEffect(() => {
+  window.scrollTo(0, 0);
+}, [id]);
 
   if (!product) {
     return <div className="p-10">Product not found.</div>;
