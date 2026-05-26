@@ -827,10 +827,10 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
   </h2>
 
   <div className="flex gap-4 overflow-x-auto pb-4">
-    <div className="w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
+    <Link to="/products/beanie-black-1" className="block w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
   <img
     src="/MMP/IMG_1826.JPEG"
-    alt="Club MP Accessory"
+    alt="Club MP Beanie"
     className="aspect-[3/4] rounded-lg object-contain w-full border border-neutral-200 bg-white p-4"
   />
 
@@ -847,11 +847,11 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
       £25.00
     </p>
   </div>
-</div>
-    <div className="w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
+</Link>
+    <Link to="/products/beanie-black-2" className="block w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
   <img
     src="/MMP/beanie.jpeg"
-    alt="Club MP Accessory"
+    alt="Club MP Beanie"
     className="aspect-[3/4] rounded-lg object-contain w-full border border-neutral-200 bg-white p-4"
   />
 
@@ -868,11 +868,11 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
       £40.00
     </p>
   </div>
-</div>
-    <div className="w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
+</Link>
+    <Link to="/products/beanie-black-3" className="block w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
   <img
     src="/MMP/WhatsApp Image 2026-05-25 at 11.39.33 (1).jpeg"
-    alt="Club MP Accessory"
+    alt="Club MP Beanie"
     className="aspect-[3/4] rounded-lg object-contain w-full border border-neutral-200 bg-white p-4"
   />
 
@@ -889,11 +889,11 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
       £45.00
     </p>
   </div>
-</div>
-    <div className="w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
+</Link>
+    <Link to="/products/wristband-black-1" className="block w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
   <img
     src="/MMP/wristbandbest.jpeg"
-    alt="Club MP Accessory"
+    alt="Club MP Wristband"
     className="aspect-[3/4] rounded-lg object-contain w-full border border-neutral-200 bg-white p-4"
   />
 
@@ -910,7 +910,7 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
       £35.00
     </p>
   </div>
-</div>
+</Link>
 <div className="w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
   <video
     src="/MMP/vid.MP4"

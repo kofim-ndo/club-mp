@@ -184,6 +184,34 @@ const products = {
   image: "/MMP/bjoggers3.png",
   description: "Premium washed-black Club MP joggers.",
 },
+"beanie-black-1": {
+  name: "Club MP Beanie",
+  price: "£25.00",
+  color: "Black / One Size",
+  image: "/MMP/IMG_1826.JPEG",
+  description: "Premium Club MP beanie.",
+},
+"beanie-black-2": {
+  name: "Club MP Beanie",
+  price: "£40.00",
+  color: "Black / One Size",
+  image: "/MMP/beanie.jpeg",
+  description: "Premium Club MP beanie.",
+},
+"beanie-black-3": {
+  name: "Club MP Beanie",
+  price: "£45.00",
+  color: "Black / One Size",
+  image: "/MMP/WhatsApp Image 2026-05-25 at 11.39.33 (1).jpeg",
+  description: "Premium Club MP beanie.",
+},
+"wristband-black-1": {
+  name: "Club MP Wristband",
+  price: "£35.00",
+  color: "Black / Blue / White",
+  image: "/MMP/wristbandbest.jpeg",
+  description: "Premium Club MP wristband.",
+},
 };
 
 export default function ProductPage() {
