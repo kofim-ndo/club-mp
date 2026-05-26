@@ -306,7 +306,7 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
     </p>
   </div>
 </Link>
-    <div className="w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
+   
   <Link to="/products/tracksuit-grey-2" className="block w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
   <img
     src="/MMP/track2.png"
@@ -328,7 +328,7 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
     </p>
   </div>
 </Link>
-</div>
+
   <Link to="/products/tracksuit-grey-3" className="block w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
   <img
     src="/MMP/track3.png"
