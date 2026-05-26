@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const products = {
   "cap-black": {
@@ -226,7 +227,12 @@ export default function ProductPage() {
   }
 
   return (
-    <main className="min-h-screen bg-white text-black px-8 md:px-16 py-10">
+    <motion.main
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5 }}
+  className="min-h-screen bg-white text-black px-8 md:px-16 py-10"
+>
       <Link to="/" className="text-xs font-bold uppercase tracking-widest">
         ← Back
       </Link>
@@ -255,6 +261,6 @@ export default function ProductPage() {
           </button>
         </div>
       </div>
-    </main>
+    </motion.main>
   );
 }
