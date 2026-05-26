@@ -942,7 +942,7 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
             <img
   src="/1000 followers.jpg"
   alt="Club MP Brand"
-  className="w-full h-[420px] object-cover rounded-lg mb-8"
+  className="w-full h-[420px] md:h-[560px] object-cover object-center rounded-lg mb-8"
 />
             <p className="text-xs font-bold uppercase tracking-[0.35em] mb-6">The Brand</p>
             <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight">Built Different.</h2>
