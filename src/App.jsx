@@ -3,11 +3,28 @@ import { FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
 import { Search, User, ShoppingBag, ArrowRight, ChevronDown } from "lucide-react";
 export default function ClubMPHomepage() {
   const [shopOpen, setShopOpen] = useState(false);
+  const [musicStarted, setMusicStarted] = useState(false);
+
+const playMusic = () => {
+  const audio = document.getElementById("site-music");
+  audio.play();
+  setMusicStarted(true);
+};
   const placeholders = Array.from({ length: 4 });
   const socialPlaceholders = Array.from({ length: 5 });
 
   return (
     <main className="min-h-screen bg-white text-black font-sans tracking-wide">
+      <audio id="site-music" src="/song.mp4" loop />
+
+{!musicStarted && (
+  <button
+    onClick={playMusic}
+    className="fixed bottom-6 right-6 z-50 bg-black text-white px-5 py-3 text-xs font-bold uppercase tracking-widest rounded-full"
+  >
+    Play Music
+  </button>
+)}
 {shopOpen && (
   <div className="fixed inset-0 z-50 flex">
     <div
@@ -96,7 +113,7 @@ export default function ClubMPHomepage() {
 />
 
 <img
-  src="/figure 2.png"
+  src="/MMP/figure 2.png"
 className="absolute right-2 md:right-12 top-[220px] md:top-52 w-20 md:w-36 rotate-[6deg] opacity-90"
 />
 
@@ -427,7 +444,7 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
     </h3>
 
     <p className="mt-1 text-sm text-neutral-600">
-      Forest Green / Relaxed Fit
+      Black / Relaxed Fit
     </p>
 
     <p className="mt-2 text-sm font-bold">
