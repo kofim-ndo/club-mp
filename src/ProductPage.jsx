@@ -114,6 +114,34 @@ const products = {
   image: "/MMP/bhoodie1.png",
   description: "Premium oversized Club MP hoodie.",
 },
+"hoodie-black-2": {
+  name: "Club MP Hoodie",
+  price: "£55.00",
+  color: "Black / Oversized Fit",
+  image: "/MMP/bhoodie2.png",
+  description: "Premium oversized Club MP hoodie.",
+},
+"hoodie-black-3": {
+  name: "Club MP Hoodie",
+  price: "£55.00",
+  color: "Black / Oversized Fit",
+  image: "/MMP/bhoodie3.png",
+  description: "Premium oversized Club MP hoodie.",
+},
+"tshirt-white-1": {
+  name: "Club MP T-Shirt",
+  price: "£20.00",
+  color: "White / Classic Fit",
+  image: "/MMP/shirts2.jpeg",
+  description: "Premium Club MP T-Shirt.",
+},
+"tshirt-black-1": {
+  name: "Club MP T-Shirt",
+  price: "£20.00",
+  color: "Black / Classic Fit",
+  image: "/MMP/shirt.jpeg",
+  description: "Premium Club MP T-Shirt.",
+},
 };
 
 export default function ProductPage() {

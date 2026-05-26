@@ -552,7 +552,7 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
     </p>
   </div>
 </Link>
-<div className="w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
+<Link to="/products/hoodie-black-2" className="block w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
   <img
     src="/MMP/bhoodie2.png"
     alt="Club MP Hoodie"
@@ -572,8 +572,8 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
       £55.00
     </p>
   </div>
-</div>
-<div className="w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
+</Link>
+<Link to="/products/hoodie-black-3" className="block w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
   <img
     src="/MMP/bhoodie3.png"
     alt="Club MP Hoodie"
@@ -586,14 +586,14 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
     </h3>
 
     <p className="mt-1 text-sm text-neutral-600">
-       Black / Oversized Fit
+      Black / Oversized Fit
     </p>
 
     <p className="mt-2 text-sm font-bold">
       £55.00
     </p>
   </div>
-</div>
+</Link>
   </div>
 </section>
 
@@ -607,7 +607,7 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
   </h2>
 
   <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-    <div>
+   <Link to="/products/tshirt-white-1" className="block">
   <img
     src="/MMP/shirts2.jpeg"
     alt="Club MP T-Shirt"
@@ -627,8 +627,8 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
       £20.00
     </p>
   </div>
-</div>
-    <div>
+</Link>
+    <Link to="/products/tshirt-black-1" className="block">
   <img
     src="/MMP/shirt.jpeg"
     alt="Club MP T-Shirt"
@@ -648,7 +648,7 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
       £20.00
     </p>
   </div>
-</div>
+</Link>
     <div>
   <video
     src="/MMP/shirt design.mp4"
