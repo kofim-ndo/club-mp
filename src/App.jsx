@@ -687,29 +687,29 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
 
   <div className="flex gap-4 overflow-x-auto pb-4">
     
-    <div className="w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
-      <img
-        src="/MMP/joggers.png"
-        alt="Club MP Joggers"
-        className="aspect-[3/4] rounded-lg object-contain w-full border border-neutral-200 bg-white p-4"
-      />
+    <Link to="/products/joggers-grey-1" className="block w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
+  <img
+    src="/MMP/joggers.png"
+    alt="Club MP Joggers"
+    className="aspect-[3/4] rounded-lg object-contain w-full border border-neutral-200 bg-white p-4"
+  />
 
-      <div className="mt-4">
-        <h3 className="text-sm font-bold uppercase tracking-widest">
-          Club MP Joggers
-        </h3>
+  <div className="mt-4">
+    <h3 className="text-sm font-bold uppercase tracking-widest">
+      Club MP Joggers
+    </h3>
 
-        <p className="mt-1 text-sm text-neutral-600">
-          Grey / Relaxed Fit
-        </p>
+    <p className="mt-1 text-sm text-neutral-600">
+      Grey / Relaxed Fit
+    </p>
 
-        <p className="mt-2 text-sm font-bold">
-          £45.00
-        </p>
-      </div>
-    </div>
+    <p className="mt-2 text-sm font-bold">
+      £45.00
+    </p>
+  </div>
+</Link>
 
-    <div className="w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
+    <Link to="/products/joggers-grey-2" className="block w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
   <img
     src="/MMP/joggersg.png"
     alt="Club MP Graphic Joggers"
@@ -729,8 +729,8 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
       £45.00
     </p>
   </div>
-</div>
-    <div className="w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
+</Link>
+    <Link to="/products/joggers-grey-3" className="block w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
   <img
     src="/MMP/joggersg2.png"
     alt="Club MP Graphic Joggers"
@@ -750,8 +750,8 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
       £45.00
     </p>
   </div>
-</div>
-    <div className="w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
+</Link>
+    <Link to="/products/joggers-black-1" className="block w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
   <img
     src="/MMP/bjoggers.png"
     alt="Club MP Joggers"
@@ -771,8 +771,8 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
       £45.00
     </p>
   </div>
-</div>
-    <div className="w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
+</Link>
+    <Link to="/products/joggers-black-2" className="block w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
   <img
     src="/MMP/bjoggers2.png"
     alt="Club MP Cargo Joggers"
@@ -792,11 +792,11 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
       £50.00
     </p>
   </div>
-</div>
-<div className="w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
+</Link>
+<Link to="/products/joggers-black-3" className="block w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
   <img
     src="/MMP/bjoggers3.png"
-    alt="Club MP GraphicJoggers"
+    alt="Club MP Graphic Joggers"
     className="aspect-[3/4] rounded-lg object-contain w-full border border-neutral-200 bg-white p-4"
   />
 
@@ -813,7 +813,7 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
       £50.00
     </p>
   </div>
-</div>
+</Link>
   </div>
 </section>
 

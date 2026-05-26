@@ -142,6 +142,48 @@ const products = {
   image: "/MMP/shirt.jpeg",
   description: "Premium Club MP T-Shirt.",
 },
+"joggers-grey-1": {
+  name: "Club MP Joggers",
+  price: "£45.00",
+  color: "Grey / Relaxed Fit",
+  image: "/MMP/joggers.png",
+  description: "Premium relaxed-fit Club MP joggers.",
+},
+"joggers-grey-2": {
+  name: "Club MP Graphic Joggers",
+  price: "£45.00",
+  color: "Grey / Relaxed Fit",
+  image: "/MMP/joggersg.png",
+  description: "Premium graphic Club MP joggers.",
+},
+"joggers-grey-3": {
+  name: "Club MP Graphic Joggers",
+  price: "£45.00",
+  color: "Grey / Relaxed Fit",
+  image: "/MMP/joggersg2.png",
+  description: "Premium graphic Club MP joggers.",
+},
+"joggers-black-1": {
+  name: "Club MP Joggers",
+  price: "£45.00",
+  color: "Black / Relaxed Fit",
+  image: "/MMP/bjoggers.png",
+  description: "Premium relaxed-fit Club MP joggers.",
+},
+"joggers-black-2": {
+  name: "Club MP Graphic Joggers",
+  price: "£50.00",
+  color: "Black / Relaxed Fit",
+  image: "/MMP/bjoggers2.png",
+  description: "Premium graphic Club MP joggers.",
+},
+"joggers-black-3": {
+  name: "Club MP Joggers",
+  price: "£50.00",
+  color: "Washed Black / Relaxed Fit",
+  image: "/MMP/bjoggers3.png",
+  description: "Premium washed-black Club MP joggers.",
+},
 };
 
 export default function ProductPage() {
