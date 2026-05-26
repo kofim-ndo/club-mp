@@ -468,7 +468,7 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
   </h2>
 
  <div className="flex gap-4 overflow-x-auto pb-4">
-    <div className="w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
+    <Link to="/products/hoodie-grey-1" className="block w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
   <img
     src="/MMP/hoodie1.png"
     alt="Club MP Hoodie"
@@ -488,8 +488,8 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
       £55.00
     </p>
   </div>
-</div>
-  <div className="w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
+</Link>
+  <Link to="/products/hoodie-grey-2" className="block w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
   <img
     src="/MMP/hoodie2.png"
     alt="Club MP Hoodie"
@@ -509,8 +509,8 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
       £55.00
     </p>
   </div>
-</div>
-    <div className="w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
+</Link>
+    <Link to="/products/hoodie-grey-3" className="block w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
   <img
     src="/MMP/hoodie3.png"
     alt="Club MP Hoodie"
@@ -530,8 +530,8 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
       £55.00
     </p>
   </div>
-</div>
-    <div className="w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
+</Link>
+    <Link to="/products/hoodie-black-1" className="block w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
   <img
     src="/MMP/bhoodie1.png"
     alt="Club MP Hoodie"
@@ -551,7 +551,7 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
       £55.00
     </p>
   </div>
-</div>
+</Link>
 <div className="w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
   <img
     src="/MMP/bhoodie2.png"

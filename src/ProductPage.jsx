@@ -86,6 +86,34 @@ const products = {
   image: "/MMP/btrack5.png",
   description: "Premium oversized Club MP tracksuit.",
 },
+"hoodie-grey-1": {
+  name: "Club MP Hoodie",
+  price: "£55.00",
+  color: "Grey / Oversized Fit",
+  image: "/MMP/hoodie1.png",
+  description: "Premium oversized Club MP hoodie.",
+},
+"hoodie-grey-2": {
+  name: "Club MP Hoodie",
+  price: "£55.00",
+  color: "Grey / Oversized Fit",
+  image: "/MMP/hoodie2.png",
+  description: "Premium oversized Club MP hoodie.",
+},
+"hoodie-grey-3": {
+  name: "Club MP Hoodie",
+  price: "£55.00",
+  color: "Grey / Oversized Fit",
+  image: "/MMP/hoodie3.png",
+  description: "Premium oversized Club MP hoodie.",
+},
+"hoodie-black-1": {
+  name: "Club MP Hoodie",
+  price: "£55.00",
+  color: "Black / Oversized Fit",
+  image: "/MMP/bhoodie1.png",
+  description: "Premium oversized Club MP hoodie.",
+},
 };
 
 export default function ProductPage() {
