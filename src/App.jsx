@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
 import { Search, User, ShoppingBag, ArrowRight, ChevronDown } from "lucide-react";
 export default function ClubMPHomepage() {
@@ -188,7 +189,7 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
   
 
   <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-    <div>
+    <Link to="/products/cap-black" className="block">
   <img
     src="/31073984-9D9C-4B0D-A569-D40D06BF6207.JPEG"
     alt="Club MP Cap"
@@ -208,8 +209,8 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
       £30.00
     </p>
   </div>
-</div>
-    <div>
+</Link>
+   <Link to="/products/cap-blue" className="block">
   <img
     src="/MMP/caps.jpeg"
     alt="Club MP Cap"
@@ -229,8 +230,8 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
       £30.00
     </p>
   </div>
-</div>
-    <div>
+</Link>
+    <Link to="/products/cap-pink" className="block">
   <img
     src="/MMP/IMG_7313.JPEG"
     alt="Club MP Cap"
@@ -250,8 +251,8 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
       £30.00
     </p>
   </div>
-</div>
-   <div>
+</Link>
+   <Link to="/products/cap-grey" className="block">
   <img
     src="/MMP/WhatsApp Image 2026-05-25 at 11.39.33.jpeg"
     alt="Club MP Cap"
@@ -271,7 +272,7 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
       £30.00
     </p>
   </div>
-</div>
+</Link>
   </div>
 </section>
 <section id="tracksuits" className="px-8 md:px-12 py-16 border-b border-neutral-200">
