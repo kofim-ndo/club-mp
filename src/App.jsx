@@ -285,7 +285,7 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
   </h2>
 
   <div className="flex gap-4 overflow-x-auto pb-4">
-<div className="w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
+<Link to="/products/tracksuit-grey-1" className="block w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
   <img
     src="/MMP/track1.png"
     alt="Club MP Tracksuit"
@@ -305,8 +305,9 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
       £95.00
     </p>
   </div>
-</div>
+</Link>
     <div className="w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
+  <Link to="/products/tracksuit-grey-2" className="block w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
   <img
     src="/MMP/track2.png"
     alt="Club MP Tracksuit"
@@ -326,8 +327,9 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
       £95.00
     </p>
   </div>
+</Link>
 </div>
-    <div className="w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
+  <Link to="/products/tracksuit-grey-3" className="block w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
   <img
     src="/MMP/track3.png"
     alt="Club MP Tracksuit"
@@ -347,8 +349,8 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
       £95.00
     </p>
   </div>
-</div>
-    <div className="w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
+</Link>
+   <Link to="/products/tracksuit-grey-4" className="block w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
   <img
     src="/MMP/track4.png"
     alt="Club MP Tracksuit"
@@ -368,8 +370,8 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
       £95.00
     </p>
   </div>
-</div>
-<div className="w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
+</Link>
+<Link to="/products/tracksuit-black-1" className="block w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
   <img
     src="/MMP/btrack1.png"
     alt="Club MP Tracksuit"
@@ -382,15 +384,15 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
     </h3>
 
     <p className="mt-1 text-sm text-neutral-600">
-       Black / Relaxed Fit
+      Black / Relaxed Fit
     </p>
 
     <p className="mt-2 text-sm font-bold">
       £95.00
     </p>
   </div>
-</div>
-<div className="w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
+</Link>
+<Link to="/products/tracksuit-black-2" className="block w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
   <img
     src="/MMP/btrack2.png"
     alt="Club MP Tracksuit"
@@ -410,8 +412,8 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
       £95.00
     </p>
   </div>
-</div>
-<div className="w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
+</Link>
+<Link to="/products/tracksuit-black-3" className="block w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
   <img
     src="/MMP/btrack3.png"
     alt="Club MP Tracksuit"
@@ -431,8 +433,8 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
       £95.00
     </p>
   </div>
-</div>
-<div className="w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
+</Link>
+<Link to="/products/tracksuit-black-4" className="block w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
   <img
     src="/MMP/btrack5.png"
     alt="Club MP Tracksuit"
@@ -452,7 +454,7 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
       £95.00
     </p>
   </div>
-</div>
+</Link>
   </div>
 </section>
 

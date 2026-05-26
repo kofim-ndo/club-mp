@@ -30,6 +30,62 @@ const products = {
     image: "/MMP/WhatsApp Image 2026-05-25 at 11.39.33.jpeg",
     description: "Premium Club MP cap with embroidered branding.",
   },
+  "tracksuit-grey-1": {
+  name: "Club MP Tracksuit",
+  price: "£95.00",
+  color: "Grey / Relaxed Fit",
+  image: "/MMP/track1.png",
+  description: "Premium oversized Club MP tracksuit.",
+},
+"tracksuit-grey-2": {
+  name: "Club MP Tracksuit",
+  price: "£95.00",
+  color: "Grey / Relaxed Fit",
+  image: "/MMP/track2.png",
+  description: "Premium oversized Club MP tracksuit.",
+},
+"tracksuit-grey-3": {
+  name: "Club MP Tracksuit",
+  price: "£95.00",
+  color: "Grey / Relaxed Fit",
+  image: "/MMP/track3.png",
+  description: "Premium oversized Club MP tracksuit.",
+},
+"tracksuit-grey-4": {
+  name: "Club MP Tracksuit",
+  price: "£95.00",
+  color: "Grey / Relaxed Fit",
+  image: "/MMP/track4.png",
+  description: "Premium oversized Club MP tracksuit.",
+},
+"tracksuit-black-1": {
+  name: "Club MP Tracksuit",
+  price: "£95.00",
+  color: "Black / Relaxed Fit",
+  image: "/MMP/btrack1.png",
+  description: "Premium oversized Club MP tracksuit.",
+},
+"tracksuit-black-2": {
+  name: "Club MP Tracksuit",
+  price: "£95.00",
+  color: "Black / Relaxed Fit",
+  image: "/MMP/btrack2.png",
+  description: "Premium oversized Club MP tracksuit.",
+},
+"tracksuit-black-3": {
+  name: "Club MP Tracksuit",
+  price: "£95.00",
+  color: "Black / Relaxed Fit",
+  image: "/MMP/btrack3.png",
+  description: "Premium oversized Club MP tracksuit.",
+},
+"tracksuit-black-4": {
+  name: "Club MP Tracksuit",
+  price: "£95.00",
+  color: "Black / Relaxed Fit",
+  image: "/MMP/btrack5.png",
+  description: "Premium oversized Club MP tracksuit.",
+},
 };
 
 export default function ProductPage() {
