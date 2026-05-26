@@ -113,7 +113,7 @@ const playMusic = () => {
 />
 
 <img
-  src="/MMP/figure 232.png"
+  src="/MMP/figure-think.png"
 className="absolute right-2 md:right-12 top-[220px] md:top-52 w-20 md:w-36 rotate-[6deg] opacity-90"
 />
 
