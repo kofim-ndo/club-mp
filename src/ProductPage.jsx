@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react";cap
 import { useParams, Link } from "react-router-dom";
 
 const products = {
@@ -50,11 +50,11 @@ export default function ProductPage() {
         <img
           src={product.image}
           alt={product.name}
-          className="w-full rounded-lg border border-neutral-200 object-cover"
+          className="w-full max-h-[45vh] md:max-h-none rounded-lg border border-neutral-200 object-contain md:object-cover"
         />
 
         <div>
-          <h1 className="text-4xl md:text-6xl font-black uppercase">
+          <h1 className="text-3xl md:text-6xl font-black uppercase">
             {product.name}
           </h1>
 
