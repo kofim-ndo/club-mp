@@ -16,8 +16,7 @@ const playMusic = () => {
 
   return (
     <main className="min-h-screen bg-white text-black font-sans tracking-wide">
-      <audio id="site-music" src="/MP3Now.com_YouTube_GUNNA-WUNNA-COPYRIGHT-FREE-COPYRIGHT-FRE_Media_tT1_1RHA7Bo_007_128k.mp3" loop />
-
+      
 {!musicStarted && (
   <button
     onClick={playMusic}

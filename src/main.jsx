@@ -10,6 +10,9 @@ import ProductPage from "./ProductPage.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
+   <audio id="site-music" src="/song.mp4" loop />
+
+   
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/products/:id" element={<ProductPage />} />
