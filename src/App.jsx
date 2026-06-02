@@ -161,12 +161,7 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
           <div>
             <div className="flex gap-4 overflow-x-auto pb-4">
               <div className="w-[calc(50%-8px)] md:w-[calc(25%-12px)] flex-shrink-0">
-  <img src="/MMP/essential1.png" alt="Club MP Essential" className="aspect-[3/4] rounded-lg object-contain w-full border border-neutral-200 bg-white p-4" />
-  <div className="mt-4">
-    <h3 className="text-sm font-bold uppercase tracking-widest">Club MP Essential</h3>
-    <p className="mt-1 text-sm text-neutral-600">Black / Regular Fit</p>
-    <p className="mt-2 text-sm font-bold">£30.00</p>
-  </div>
+  
 </div>
             </div>
             <div className="flex justify-end mt-8">
