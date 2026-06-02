@@ -244,6 +244,7 @@ export default function ProductPage() {
   const product = products[id];
   const { addToCart } = useCart();
   const [selectedSize, setSelectedSize] = useState("");
+  const [showToast, setShowToast] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -254,15 +255,21 @@ export default function ProductPage() {
   }
 
   return (
-    <motion.main
-  initial={{ opacity: 0, y: 30 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.5 }}
-  className="min-h-screen bg-white text-black px-8 md:px-16 py-10"
->
-      <Link to="/" className="text-xs font-bold uppercase tracking-widest">
-        ← Back
-      </Link>
+  <motion.main
+    initial={{ opacity: 0, y: 30 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.5 }}
+    className="min-h-screen bg-white text-black px-8 md:px-16 py-10"
+  >
+    {showToast && (
+      <div className="fixed top-6 right-6 z-50 bg-black text-white px-6 py-4 rounded-lg shadow-xl text-sm font-bold uppercase tracking-widest">
+        ✓ Added To Cart
+      </div>
+    )}
+
+    <Link to="/" className="text-xs font-bold uppercase tracking-widest">
+      ← Back
+    </Link>
 
       <div className="grid md:grid-cols-2 gap-12 mt-10">
         <img
@@ -314,10 +321,16 @@ export default function ProductPage() {
     }
 
     addToCart({
-      id: product.sizes ? `${id}-${selectedSize}` : id,
-      ...product,
-      selectedSize,
-    });
+  id: product.sizes ? `${id}-${selectedSize}` : id,
+  ...product,
+  selectedSize,
+});
+
+setShowToast(true);
+
+setTimeout(() => {
+  setShowToast(false);
+}, 2000);
   }}
   className="mt-10 w-full bg-black text-white py-5 text-xs font-bold uppercase tracking-widest"
 >
