@@ -218,6 +218,7 @@ const products = {
 export default function ProductPage() {
   const { id } = useParams();
   const product = products[id];
+  const { addToCart } = useCart();
   useEffect(() => {
   window.scrollTo(0, 0);
 }, [id]);
@@ -256,9 +257,12 @@ export default function ProductPage() {
             {product.description}
           </p>
 
-          <button className="mt-10 w-full bg-black text-white py-5 text-xs font-bold uppercase tracking-widest">
-            Coming Soon
-          </button>
+          <button
+  onClick={() => addToCart({ id, ...product })}
+  className="mt-10 w-full bg-black text-white py-5 text-xs font-bold uppercase tracking-widest"
+>
+  Add To Cart
+</button>
         </div>
       </div>
     </motion.main>

@@ -1,3 +1,4 @@
+import { CartProvider } from "./CartContext.jsx";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -15,9 +16,13 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 
    
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/products/:id" element={<ProductPage />} />
-        <Route path="/story" element={<StoryPage />} />
+        <CartProvider>
+  <Routes>
+    <Route path="/" element={<App />} />
+    <Route path="/products/:id" element={<ProductPage />} />
+    <Route path="/story" element={<StoryPage />} />
+  </Routes>
+</CartProvider>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
