@@ -25,6 +25,27 @@ export function CartProvider({ children }) {
     items.filter((item) => item.id !== id)
   );
 };
+const increaseQuantity = (id) => {
+  setCartItems((items) =>
+    items.map((item) =>
+      item.id === id
+        ? { ...item, quantity: item.quantity + 1 }
+        : item
+    )
+  );
+};
+
+const decreaseQuantity = (id) => {
+  setCartItems((items) =>
+    items
+      .map((item) =>
+        item.id === id
+          ? { ...item, quantity: item.quantity - 1 }
+          : item
+      )
+      .filter((item) => item.quantity > 0)
+  );
+};
 
 return (
   
@@ -35,6 +56,8 @@ return (
     cartItems,
     addToCart,
     removeFromCart,
+    increaseQuantity,
+    decreaseQuantity
   }}
 >
       {children}

@@ -262,10 +262,10 @@ export default function ProductPage() {
     className="min-h-screen bg-white text-black px-8 md:px-16 py-10"
   >
     {showToast && (
-      <div className="fixed top-6 right-6 z-50 bg-black text-white px-6 py-4 rounded-lg shadow-xl text-sm font-bold uppercase tracking-widest">
-        ✓ Added To Cart
-      </div>
-    )}
+  <div className="fixed top-6 right-6 z-50 bg-black text-white px-6 py-4 rounded-lg shadow-xl text-sm font-bold uppercase tracking-widest">
+    ✓ Added To Cart
+  </div>
+)}
 
     <Link to="/" className="text-xs font-bold uppercase tracking-widest">
       ← Back

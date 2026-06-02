@@ -6,7 +6,12 @@ import { useCart } from "./CartContext.jsx";
 export default function ClubMPHomepage() {
   const [shopOpen, setShopOpen] = useState(false);
   const [musicStarted, setMusicStarted] = useState(false);
-  const { cartItems, removeFromCart } = useCart();
+  const {
+  cartItems,
+  removeFromCart,
+  increaseQuantity,
+  decreaseQuantity,
+} = useCart();
   const [cartOpen, setCartOpen] = useState(false);
 
 const playMusic = () => {
