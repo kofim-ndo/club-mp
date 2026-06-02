@@ -63,12 +63,7 @@ const playMusic = () => {
     Remove
   </button>
 </div>
-  <button
-    onClick={() => removeFromCart(item.id)}
-    className="text-xs text-red-500 font-bold"
-  >
-    Remove
-  </button>
+  
 </div>
               </div>
             </div>
