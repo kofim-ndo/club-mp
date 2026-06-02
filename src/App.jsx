@@ -7,6 +7,7 @@ export default function ClubMPHomepage() {
   const [shopOpen, setShopOpen] = useState(false);
   const [musicStarted, setMusicStarted] = useState(false);
   const { cartItems } = useCart();
+  const [cartOpen, setCartOpen] = useState(false);
 
 const playMusic = () => {
   const audio = document.getElementById("site-music");
@@ -18,6 +19,52 @@ const playMusic = () => {
 
   return (
     <main className="min-h-screen bg-white text-black font-sans tracking-wide">
+      {cartOpen && (
+  <div className="fixed inset-0 z-50 flex justify-end">
+    <div
+      className="absolute inset-0 bg-black/40"
+      onClick={() => setCartOpen(false)}
+    />
+
+    <aside className="relative w-80 max-w-[85%] h-full bg-white p-6 shadow-2xl">
+      <button
+        onClick={() => setCartOpen(false)}
+        className="absolute top-5 right-5 text-2xl font-bold"
+      >
+        ×
+      </button>
+
+      <h2 className="text-2xl font-black uppercase mb-8">Cart</h2>
+
+      {cartItems.length === 0 ? (
+        <p className="text-sm text-neutral-500">Your cart is empty.</p>
+      ) : (
+        <div className="space-y-5">
+          {cartItems.map((item) => (
+            <div key={item.id} className="flex gap-4 border-b pb-4">
+              <img
+                src={item.image}
+                alt={item.name}
+                className="w-16 h-20 object-contain border bg-white"
+              />
+
+              <div>
+                <h3 className="text-xs font-bold uppercase">{item.name}</h3>
+                <p className="text-xs text-neutral-500">{item.color}</p>
+                <p className="text-xs font-bold mt-1">{item.price}</p>
+                <p className="text-xs mt-1">Qty: {item.quantity}</p>
+              </div>
+            </div>
+          ))}
+
+          <button className="w-full bg-black text-white py-4 text-xs font-bold uppercase tracking-widest">
+            Checkout Coming Soon
+          </button>
+        </div>
+      )}
+    </aside>
+  </div>
+)}
       
 {!musicStarted && (
   <button
@@ -84,7 +131,10 @@ const playMusic = () => {
         <div className="flex items-center gap-6 ml-auto">
           <a href="#search" className="hidden md:flex items-center gap-2 hover:opacity-60">Search <Search size={18} /></a>
           <a href="#account" className="hidden md:flex items-center gap-2 hover:opacity-60">Account <User size={18} /></a>
-          <a href="#cart" className="flex items-center gap-2 hover:opacity-60">Cart <ShoppingBag size={18} /><span className="grid place-items-center h-5 w-5 rounded-full bg-black text-white text-[10px]">{cartItems.length}</span></a>
+          <button
+  onClick={() => setCartOpen(true)}
+  className="flex items-center gap-2 hover:opacity-60"
+>Cart <ShoppingBag size={18} /><span className="grid place-items-center h-5 w-5 rounded-full bg-black text-white text-[10px]">{cartItems.length}</span></button>
           
         </div>
       </header>
