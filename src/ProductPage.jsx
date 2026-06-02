@@ -1,7 +1,8 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useCart } from "./CartContext.jsx";
+
 
 const products = {
   "cap-black": {
@@ -38,6 +39,7 @@ const products = {
   color: "Grey / Relaxed Fit",
   image: "/MMP/track1.png",
   description: "Premium oversized Club MP tracksuit.",
+  sizes: ["S", "M", "L", "XL"],
 },
 "tracksuit-grey-2": {
   name: "Club MP Tracksuit",
@@ -45,6 +47,7 @@ const products = {
   color: "Grey / Relaxed Fit",
   image: "/MMP/track2.png",
   description: "Premium oversized Club MP tracksuit.",
+  sizes: ["S", "M", "L", "XL"],
 },
 "tracksuit-grey-3": {
   name: "Club MP Tracksuit",
@@ -52,6 +55,7 @@ const products = {
   color: "Grey / Relaxed Fit",
   image: "/MMP/track3.png",
   description: "Premium oversized Club MP tracksuit.",
+  sizes: ["S", "M", "L", "XL"],
 },
 "tracksuit-grey-4": {
   name: "Club MP Tracksuit",
@@ -59,6 +63,7 @@ const products = {
   color: "Grey / Relaxed Fit",
   image: "/MMP/track4.png",
   description: "Premium oversized Club MP tracksuit.",
+  sizes: ["S", "M", "L", "XL"],
 },
 "tracksuit-black-1": {
   name: "Club MP Tracksuit",
@@ -66,6 +71,7 @@ const products = {
   color: "Black / Relaxed Fit",
   image: "/MMP/btrack1.png",
   description: "Premium oversized Club MP tracksuit.",
+  sizes: ["S", "M", "L", "XL"],
 },
 "tracksuit-black-2": {
   name: "Club MP Tracksuit",
@@ -73,6 +79,7 @@ const products = {
   color: "Black / Relaxed Fit",
   image: "/MMP/btrack2.png",
   description: "Premium oversized Club MP tracksuit.",
+  sizes: ["S", "M", "L", "XL"],
 },
 "tracksuit-black-3": {
   name: "Club MP Tracksuit",
@@ -80,6 +87,7 @@ const products = {
   color: "Black / Relaxed Fit",
   image: "/MMP/btrack3.png",
   description: "Premium oversized Club MP tracksuit.",
+  sizes: ["S", "M", "L", "XL"],
 },
 "tracksuit-black-4": {
   name: "Club MP Tracksuit",
@@ -87,6 +95,7 @@ const products = {
   color: "Black / Relaxed Fit",
   image: "/MMP/btrack5.png",
   description: "Premium oversized Club MP tracksuit.",
+  sizes: ["S", "M", "L", "XL"],
 },
 "hoodie-grey-1": {
   name: "Club MP Hoodie",
@@ -94,6 +103,7 @@ const products = {
   color: "Grey / Oversized Fit",
   image: "/MMP/hoodie1.png",
   description: "Premium oversized Club MP hoodie.",
+  sizes: ["S", "M", "L", "XL"],
 },
 "hoodie-grey-2": {
   name: "Club MP Hoodie",
@@ -101,6 +111,7 @@ const products = {
   color: "Grey / Oversized Fit",
   image: "/MMP/hoodie2.png",
   description: "Premium oversized Club MP hoodie.",
+  sizes: ["S", "M", "L", "XL"],
 },
 "hoodie-grey-3": {
   name: "Club MP Hoodie",
@@ -108,6 +119,7 @@ const products = {
   color: "Grey / Oversized Fit",
   image: "/MMP/hoodie3.png",
   description: "Premium oversized Club MP hoodie.",
+  sizes: ["S", "M", "L", "XL"],
 },
 "hoodie-black-1": {
   name: "Club MP Hoodie",
@@ -115,6 +127,7 @@ const products = {
   color: "Black / Oversized Fit",
   image: "/MMP/bhoodie1.png",
   description: "Premium oversized Club MP hoodie.",
+  sizes: ["S", "M", "L", "XL"],
 },
 "hoodie-black-2": {
   name: "Club MP Hoodie",
@@ -122,6 +135,7 @@ const products = {
   color: "Black / Oversized Fit",
   image: "/MMP/bhoodie2.png",
   description: "Premium oversized Club MP hoodie.",
+  sizes: ["S", "M", "L", "XL"],
 },
 "hoodie-black-3": {
   name: "Club MP Hoodie",
@@ -129,6 +143,7 @@ const products = {
   color: "Black / Oversized Fit",
   image: "/MMP/bhoodie3.png",
   description: "Premium oversized Club MP hoodie.",
+  sizes: ["S", "M", "L", "XL"],
 },
 "tshirt-white-1": {
   name: "Club MP T-Shirt",
@@ -136,6 +151,7 @@ const products = {
   color: "White / Classic Fit",
   image: "/MMP/shirts2.jpeg",
   description: "Premium Club MP T-Shirt.",
+  sizes: ["S", "M", "L", "XL"],
 },
 "tshirt-black-1": {
   name: "Club MP T-Shirt",
@@ -143,6 +159,7 @@ const products = {
   color: "Black / Classic Fit",
   image: "/MMP/shirt.jpeg",
   description: "Premium Club MP T-Shirt.",
+  sizes: ["S", "M", "L", "XL"],
 },
 "joggers-grey-1": {
   name: "Club MP Joggers",
@@ -150,6 +167,7 @@ const products = {
   color: "Grey / Relaxed Fit",
   image: "/MMP/joggers.png",
   description: "Premium relaxed-fit Club MP joggers.",
+  sizes: ["S", "M", "L", "XL"],
 },
 "joggers-grey-2": {
   name: "Club MP Graphic Joggers",
@@ -157,6 +175,7 @@ const products = {
   color: "Grey / Relaxed Fit",
   image: "/MMP/joggersg.png",
   description: "Premium graphic Club MP joggers.",
+  sizes: ["S", "M", "L", "XL"],
 },
 "joggers-grey-3": {
   name: "Club MP Graphic Joggers",
@@ -164,6 +183,7 @@ const products = {
   color: "Grey / Relaxed Fit",
   image: "/MMP/joggersg2.png",
   description: "Premium graphic Club MP joggers.",
+  sizes: ["S", "M", "L", "XL"],
 },
 "joggers-black-1": {
   name: "Club MP Joggers",
@@ -171,6 +191,7 @@ const products = {
   color: "Black / Relaxed Fit",
   image: "/MMP/bjoggers.png",
   description: "Premium relaxed-fit Club MP joggers.",
+  sizes: ["S", "M", "L", "XL"],
 },
 "joggers-black-2": {
   name: "Club MP Graphic Joggers",
@@ -178,6 +199,7 @@ const products = {
   color: "Black / Relaxed Fit",
   image: "/MMP/bjoggers2.png",
   description: "Premium graphic Club MP joggers.",
+  sizes: ["S", "M", "L", "XL"],
 },
 "joggers-black-3": {
   name: "Club MP Joggers",
@@ -185,6 +207,7 @@ const products = {
   color: "Washed Black / Relaxed Fit",
   image: "/MMP/bjoggers3.png",
   description: "Premium washed-black Club MP joggers.",
+  sizes: ["S", "M", "L", "XL"],
 },
 "beanie-black-1": {
   name: "Club MP Beanie",
@@ -220,9 +243,11 @@ export default function ProductPage() {
   const { id } = useParams();
   const product = products[id];
   const { addToCart } = useCart();
+  const [selectedSize, setSelectedSize] = useState("");
+
   useEffect(() => {
-  window.scrollTo(0, 0);
-}, [id]);
+    window.scrollTo(0, 0);
+  }, [id]);
 
   if (!product) {
     return <div className="p-10">Product not found.</div>;
@@ -257,9 +282,43 @@ export default function ProductPage() {
           <p className="mt-8 text-sm leading-relaxed">
             {product.description}
           </p>
+          {product.sizes && (
+  <div className="mt-8">
+    <p className="text-xs font-bold uppercase tracking-widest mb-3">
+      Size
+    </p>
+
+    <div className="flex gap-2 flex-wrap">
+      {product.sizes.map((size) => (
+        <button
+          key={size}
+          onClick={() => setSelectedSize(size)}
+          className={`border px-5 py-3 text-xs font-bold uppercase ${
+            selectedSize === size
+              ? "bg-black text-white border-black"
+              : "border-black"
+          }`}
+        >
+          {size}
+        </button>
+      ))}
+    </div>
+  </div>
+)}
 
           <button
-  onClick={() => addToCart({ id, ...product })}
+  onClick={() => {
+    if (product.sizes && !selectedSize) {
+      alert("Please select a size");
+      return;
+    }
+
+    addToCart({
+      id: product.sizes ? `${id}-${selectedSize}` : id,
+      ...product,
+      selectedSize,
+    });
+  }}
   className="mt-10 w-full bg-black text-white py-5 text-xs font-bold uppercase tracking-widest"
 >
   Add To Cart
