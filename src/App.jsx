@@ -59,7 +59,23 @@ const playMusic = () => {
                 <p className="text-xs font-bold mt-1">{item.price}</p>
                 <div className="flex items-center justify-between mt-2">
   <div className="flex items-center justify-between mt-2 gap-4">
-  <p className="text-xs">Qty: {item.quantity}</p>
+  <div className="flex items-center gap-2">
+  <button
+    onClick={() => decreaseQuantity(item.id)}
+    className="border border-black w-6 h-6 text-xs font-bold"
+  >
+    -
+  </button>
+
+  <span className="text-xs font-bold">{item.quantity}</span>
+
+  <button
+    onClick={() => increaseQuantity(item.id)}
+    className="border border-black w-6 h-6 text-xs font-bold"
+  >
+    +
+  </button>
+</div>
 
   <button
     onClick={() => removeFromCart(item.id)}
