@@ -6,7 +6,7 @@ import { useCart } from "./CartContext.jsx";
 export default function ClubMPHomepage() {
   const [shopOpen, setShopOpen] = useState(false);
   const [musicStarted, setMusicStarted] = useState(false);
-  const { cartItems } = useCart();
+  const { cartItems, removeFromCart } = useCart();
   const [cartOpen, setCartOpen] = useState(false);
 
 const playMusic = () => {
@@ -52,14 +52,46 @@ const playMusic = () => {
                 <h3 className="text-xs font-bold uppercase">{item.name}</h3>
                 <p className="text-xs text-neutral-500">{item.color}</p>
                 <p className="text-xs font-bold mt-1">{item.price}</p>
-                <p className="text-xs mt-1">Qty: {item.quantity}</p>
+                <div className="flex items-center justify-between mt-2">
+  <div className="flex items-center justify-between mt-2 gap-4">
+  <p className="text-xs">Qty: {item.quantity}</p>
+
+  <button
+    onClick={() => removeFromCart(item.id)}
+    className="text-xs font-bold uppercase text-red-500"
+  >
+    Remove
+  </button>
+</div>
+  <button
+    onClick={() => removeFromCart(item.id)}
+    className="text-xs text-red-500 font-bold"
+  >
+    Remove
+  </button>
+</div>
               </div>
             </div>
           ))}
 
-          <button className="w-full bg-black text-white py-4 text-xs font-bold uppercase tracking-widest">
-            Checkout Coming Soon
-          </button>
+          <div className="border-t pt-4">
+  <div className="flex justify-between text-sm font-bold uppercase mb-4">
+    <span>Subtotal</span>
+    <span>
+      £
+      {cartItems
+        .reduce((total, item) => {
+          const price = Number(item.price.replace("£", ""));
+          return total + price * item.quantity;
+        }, 0)
+        .toFixed(2)}
+    </span>
+  </div>
+
+  <button className="w-full bg-black text-white py-4 text-xs font-bold uppercase tracking-widest">
+    Checkout Coming Soon
+  </button>
+</div>
         </div>
       )}
     </aside>
