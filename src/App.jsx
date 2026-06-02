@@ -948,9 +948,22 @@ className="h-48 md:h-[500px] w-auto object-contain mx-auto mix-blend-multiply dr
 />
             <p className="text-xs font-bold uppercase tracking-[0.35em] mb-6">The Brand</p>
             <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight">Built Different.</h2>
-            <a href="#story" className="inline-flex items-center gap-5 mt-12 w-fit border border-black px-10 py-4 text-xs font-bold uppercase tracking-widest hover:bg-black hover:text-white transition">
+            <p className="mt-6 text-neutral-700 leading-relaxed">
+  Millimovepriveclub, also known as MP Club, is more than a clothing brand —
+  it is a movement built for individuals who lead with purpose and refuse to
+  follow the crowd.
+</p>
+
+<p className="mt-4 text-neutral-700 leading-relaxed">
+  Guided by the slogan “For Those Who Lead, Not Follow,” MP Club represents
+  confidence, ambition, and authenticity. Every collection is designed for
+  people who think independently, set their own standards, and inspire those
+  around them through their actions.
+</p>
+
+            <Link to="/story" className="inline-flex items-center gap-5 mt-12 w-fit border border-black px-10 py-4 text-xs font-bold uppercase tracking-widest hover:bg-black hover:text-white transition">
               Our Story <ArrowRight size={16} />
-            </a>
+            </Link>
           </div>
         </div>
       </section>

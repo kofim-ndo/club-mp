@@ -6,6 +6,7 @@ import "./index.css";
 
 import App from "./App.jsx";
 import ProductPage from "./ProductPage.jsx";
+import StoryPage from "./StoryPage.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -16,6 +17,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/products/:id" element={<ProductPage />} />
+        <Route path="/story" element={<StoryPage />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
